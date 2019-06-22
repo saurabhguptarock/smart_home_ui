@@ -19,8 +19,8 @@ class HomePage extends StatelessWidget {
       body: Column(
         children: <Widget>[
           Padding(
-            padding:
-                EdgeInsets.only(top: MediaQuery.of(context).size.height * 0.03),
+            padding: EdgeInsets.only(
+                top: MediaQuery.of(context).size.height > 700 ? 25 : 27),
           ),
           Card(
             margin: EdgeInsets.all(0),
@@ -38,7 +38,7 @@ class HomePage extends StatelessWidget {
                   borderRadius:
                       BorderRadius.vertical(bottom: Radius.circular(35))),
               width: MediaQuery.of(context).size.width,
-              height: MediaQuery.of(context).size.height * .3,
+              height: MediaQuery.of(context).size.height * 0.3,
               child: Column(
                 children: <Widget>[
                   Row(
@@ -126,16 +126,13 @@ class HomePage extends StatelessWidget {
                                       fontWeight: FontWeight.bold),
                                 ),
                                 SizedBox(
-                                  height: 4,
+                                  height: 1,
                                 ),
                                 Text(
                                   'Wiz Khalifa',
                                   style: TextStyle(color: Colors.grey[350]),
                                 ),
                               ],
-                            ),
-                            SizedBox(
-                              width: 0,
                             ),
                             Icon(
                               FontAwesomeIcons.chevronLeft,
@@ -162,7 +159,7 @@ class HomePage extends StatelessWidget {
             ),
           ),
           Padding(
-            padding: EdgeInsets.only(top: 40, left: 30, right: 30),
+            padding: EdgeInsets.only(top: 30, left: 15, right: 15),
             child: Column(
               children: <Widget>[
                 SingleChildScrollView(
@@ -205,7 +202,7 @@ class HomePage extends StatelessWidget {
                   ),
                 ),
                 SizedBox(
-                  height: MediaQuery.of(context).size.height * 0.05,
+                  height: MediaQuery.of(context).size.height * 0.03,
                 ),
                 SingleChildScrollView(
                   child: Column(
@@ -216,7 +213,7 @@ class HomePage extends StatelessWidget {
                         children: <Widget>[
                           Card(
                             shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(35),
+                              borderRadius: BorderRadius.circular(20),
                             ),
                             child: Container(
                               decoration: BoxDecoration(
@@ -225,11 +222,15 @@ class HomePage extends StatelessWidget {
                                       begin: Alignment.topCenter,
                                       end: Alignment.bottomCenter),
                                   color: Colors.white,
-                                  borderRadius: BorderRadius.circular(35)),
-                              height: MediaQuery.of(context).size.height * 0.21,
-                              width: MediaQuery.of(context).size.height * 0.21,
+                                  borderRadius: BorderRadius.circular(20)),
+                              height: MediaQuery.of(context).size.height > 700
+                                  ? MediaQuery.of(context).size.height * 0.21
+                                  : MediaQuery.of(context).size.height * 0.18,
+                              width: MediaQuery.of(context).size.height > 700
+                                  ? MediaQuery.of(context).size.height * 0.21
+                                  : MediaQuery.of(context).size.height * 0.18,
                               child: Padding(
-                                padding: EdgeInsets.all(17.0),
+                                padding: EdgeInsets.all(14.0),
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: <Widget>[
@@ -252,7 +253,7 @@ class HomePage extends StatelessWidget {
                                     SizedBox(
                                       height:
                                           MediaQuery.of(context).size.height *
-                                              0.03,
+                                              0.01,
                                     ),
                                     Text(
                                       'Lamp',
@@ -262,7 +263,7 @@ class HomePage extends StatelessWidget {
                                     SizedBox(
                                       height:
                                           MediaQuery.of(context).size.height *
-                                              0.01,
+                                              0.001,
                                     ),
                                     Text(
                                       'OPENED',
@@ -275,16 +276,20 @@ class HomePage extends StatelessWidget {
                           ),
                           Card(
                             shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(35),
+                              borderRadius: BorderRadius.circular(20),
                             ),
                             child: Container(
                               decoration: BoxDecoration(
                                   color: Colors.white,
-                                  borderRadius: BorderRadius.circular(35)),
-                              height: MediaQuery.of(context).size.height * 0.21,
-                              width: MediaQuery.of(context).size.height * 0.21,
+                                  borderRadius: BorderRadius.circular(20)),
+                              height: MediaQuery.of(context).size.height > 700
+                                  ? MediaQuery.of(context).size.height * 0.21
+                                  : MediaQuery.of(context).size.height * 0.18,
+                              width: MediaQuery.of(context).size.height > 700
+                                  ? MediaQuery.of(context).size.height * 0.21
+                                  : MediaQuery.of(context).size.height * 0.18,
                               child: Padding(
-                                padding: EdgeInsets.all(17.0),
+                                padding: EdgeInsets.all(14.0),
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: <Widget>[
@@ -306,7 +311,7 @@ class HomePage extends StatelessWidget {
                                     SizedBox(
                                       height:
                                           MediaQuery.of(context).size.height *
-                                              0.03,
+                                              0.01,
                                     ),
                                     Text(
                                       'Router',
@@ -316,7 +321,7 @@ class HomePage extends StatelessWidget {
                                     SizedBox(
                                       height:
                                           MediaQuery.of(context).size.height *
-                                              0.01,
+                                              0.001,
                                     ),
                                     Text(
                                       'CLOSED',
