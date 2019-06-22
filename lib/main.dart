@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-void main() => runApp(App());
+void main() => runApp(MyApp());
 
-class App extends StatelessWidget {
+class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -18,6 +18,10 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       body: Column(
         children: <Widget>[
+          Padding(
+            padding:
+                EdgeInsets.only(top: MediaQuery.of(context).size.height * 0.03),
+          ),
           Card(
             margin: EdgeInsets.all(0),
             elevation: 15,
@@ -174,7 +178,7 @@ class HomePage extends StatelessWidget {
                             fontWeight: FontWeight.bold),
                       ),
                       SizedBox(
-                        width: 32,
+                        width: MediaQuery.of(context).size.width * 0.08,
                       ),
                       Text(
                         'Bedroom',
@@ -184,14 +188,14 @@ class HomePage extends StatelessWidget {
                         ),
                       ),
                       SizedBox(
-                        width: 32,
+                        width: MediaQuery.of(context).size.width * 0.08,
                       ),
                       Text(
                         'Bathroom',
                         style: TextStyle(color: Colors.grey, fontSize: 17),
                       ),
                       SizedBox(
-                        width: 32,
+                        width: MediaQuery.of(context).size.width * 0.08,
                       ),
                       Text(
                         'Kitchen',
@@ -201,7 +205,7 @@ class HomePage extends StatelessWidget {
                   ),
                 ),
                 SizedBox(
-                  height: 40,
+                  height: MediaQuery.of(context).size.height * 0.05,
                 ),
                 SingleChildScrollView(
                   child: Column(
@@ -246,7 +250,9 @@ class HomePage extends StatelessWidget {
                                       ],
                                     ),
                                     SizedBox(
-                                      height: 27,
+                                      height:
+                                          MediaQuery.of(context).size.height *
+                                              0.03,
                                     ),
                                     Text(
                                       'Lamp',
@@ -254,7 +260,9 @@ class HomePage extends StatelessWidget {
                                           color: Colors.white, fontSize: 23),
                                     ),
                                     SizedBox(
-                                      height: 3,
+                                      height:
+                                          MediaQuery.of(context).size.height *
+                                              0.01,
                                     ),
                                     Text(
                                       'OPENED',
@@ -296,7 +304,9 @@ class HomePage extends StatelessWidget {
                                       ],
                                     ),
                                     SizedBox(
-                                      height: 27,
+                                      height:
+                                          MediaQuery.of(context).size.height *
+                                              0.03,
                                     ),
                                     Text(
                                       'Router',
@@ -304,7 +314,9 @@ class HomePage extends StatelessWidget {
                                           color: Colors.black, fontSize: 23),
                                     ),
                                     SizedBox(
-                                      height: 3,
+                                      height:
+                                          MediaQuery.of(context).size.height *
+                                              0.01,
                                     ),
                                     Text(
                                       'CLOSED',
@@ -318,7 +330,7 @@ class HomePage extends StatelessWidget {
                         ],
                       ),
                       SizedBox(
-                        height: 15,
+                        height: MediaQuery.of(context).size.height * 0.035,
                       ),
                       Card(
                         shape: RoundedRectangleBorder(
@@ -342,14 +354,17 @@ class HomePage extends StatelessWidget {
                                       MainAxisAlignment.spaceBetween,
                                   children: <Widget>[
                                     Image(
-                                      height: 30,
+                                      height:
+                                          MediaQuery.of(context).size.height *
+                                              0.045,
                                       color: Colors.blue,
                                       image: AssetImage(
                                         'assets/images/ac.png',
                                       ),
                                     ),
                                     SizedBox(
-                                      width: 30,
+                                      width: MediaQuery.of(context).size.width *
+                                          0.065,
                                     ),
                                     Icon(
                                       Icons.wb_sunny,
@@ -368,7 +383,8 @@ class HomePage extends StatelessWidget {
                                       color: Colors.grey[400],
                                     ),
                                     SizedBox(
-                                      width: 30,
+                                      width: MediaQuery.of(context).size.width *
+                                          0.065,
                                     ),
                                     Switch.adaptive(
                                       onChanged: (val) {},
@@ -396,7 +412,9 @@ class HomePage extends StatelessWidget {
                                         ],
                                       ),
                                       SizedBox(
-                                        width: 35,
+                                        width:
+                                            MediaQuery.of(context).size.width *
+                                                0.08,
                                       ),
                                       Text(
                                         '16',
@@ -405,7 +423,9 @@ class HomePage extends StatelessWidget {
                                             color: Colors.grey[400]),
                                       ),
                                       SizedBox(
-                                        width: 25,
+                                        width:
+                                            MediaQuery.of(context).size.width *
+                                                0.06,
                                       ),
                                       Text(
                                         '20',
@@ -414,11 +434,17 @@ class HomePage extends StatelessWidget {
                                             color: Colors.grey[400]),
                                       ),
                                       SizedBox(
-                                        width: 25,
+                                        width:
+                                            MediaQuery.of(context).size.width *
+                                                0.06,
                                       ),
                                       Container(
-                                        height: 30,
-                                        width: 30,
+                                        height:
+                                            MediaQuery.of(context).size.height *
+                                                0.05,
+                                        width:
+                                            MediaQuery.of(context).size.width *
+                                                0.07,
                                         decoration: BoxDecoration(
                                             color: Colors.blue,
                                             shape: BoxShape.circle),
@@ -429,7 +455,9 @@ class HomePage extends StatelessWidget {
                                         ),
                                       ),
                                       SizedBox(
-                                        width: 25,
+                                        width:
+                                            MediaQuery.of(context).size.width *
+                                                0.06,
                                       ),
                                       Text(
                                         '28',
@@ -438,7 +466,9 @@ class HomePage extends StatelessWidget {
                                             color: Colors.grey[400]),
                                       ),
                                       SizedBox(
-                                        width: 25,
+                                        width:
+                                            MediaQuery.of(context).size.width *
+                                                0.06,
                                       ),
                                       Text(
                                         '32',
